@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="style.css" />
+    <title>Log in Page</title>
+  </head>
+  <body>
+    <div class="hero3">
+      <nav>
+        <h2 class="logo">Portfo<span>lio</span></h2>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About Me</a></li>
+          <li><a href="#">Skills</a></li>
+          <li><a href="form.html">Contact Us</a></li>
+          <li><a href="#">Services</a></li>
+        </ul>
+        <a href="#" class="btn">Subscribe</a>
+      </nav>
+
+      <div id="login-form" class="login-page">
+        <div class="form-box">
+          <div class="form2">
+            <form class="login-form">
+              <center><h1 class="main-heading">Login Form</h1></center>
+              <input type="text" placeholder="username" />
+              <input type="password" placeholder="password" />
+              <button>LOGIN</button>
+              <p class="asking">Not Registered?<a href="#">Register</a></p>
+            </form>
+            <form class="register-form">
+              <center><h1 class="main-heading">Register Form</h1></center>
+              <input type="text" placeholder="username" />
+              <input type="text" placeholder="email-id" />
+              <input type="password" placeholder="password" />
+              <button>REGISTER</button>
+              <p class="asking">Already Registered?<a href="#">Login</a></p>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script>
+      var modal = document.getElementById("login-form");
+      window.onclick = function (event) {
+        if (event.target == modal) {
+          modal.style.display = "none";
+        }
+      };
+    </script>
+    <script src="jquery.txt"></script>
+    <script>
+      $(".asking a").click(function () {
+        $("form").animate({ height: "toggle", opacity: "toggle" }, "slow");
+      });
+    </script>
+  </body>
+</html>
